@@ -42,6 +42,9 @@ public class CarListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
     public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
         CarData carData = mList.get(position);
 
+        CarListViewHolder viewHolder = (CarListViewHolder) holder;
+
+        viewHolder.mName.setText(carData.getName());
     }
 
     @Override
