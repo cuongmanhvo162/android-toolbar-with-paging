@@ -9,18 +9,18 @@ import android.view.ViewGroup;
 import java.util.List;
 
 import cuongvo.androidtoolbarwithpaging.R;
-import cuongvo.androidtoolbarwithpaging.adapter.holder.CarListViewHolder;
-import cuongvo.androidtoolbarwithpaging.data.CarData;
+import cuongvo.androidtoolbarwithpaging.adapter.holder.CarBrandListViewHolder;
+import cuongvo.androidtoolbarwithpaging.data.CarBrandData;
 
 /**
  * Created by cuongvo on 5/14/17.
  */
 
-public class CarListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
+public class CarBrandListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     private Context mContext;
-    private List<CarData> mList;
+    private List<CarBrandData> mList;
 
-    public CarListAdapter(Context context, List<CarData> list) {
+    public CarBrandListAdapter(Context context, List<CarBrandData> list){
         this.mContext = context;
         this.mList = list;
     }
@@ -33,14 +33,15 @@ public class CarListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
 
         view = inflaterMainCategory.inflate(R.layout.adapter_car_list, parent, false);
 
-        CarListViewHolder holder = new CarListViewHolder(view);
+        CarBrandListViewHolder holder = new CarBrandListViewHolder(view);
 
         return holder;
     }
 
     @Override
     public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
-        CarData carData = mList.get(position);
+        CarBrandData carBrandData = mList.get(position);
+
 
     }
 

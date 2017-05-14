@@ -1,3 +1,33 @@
 <resources>
-    <string name="app_name">AndroidToolbarWithPaging</string>
+    <string name="app_name">Android Toolbar With Paging</string>
+
+    <string name="audi">Audi</string>
+    <string name="mercedes">Mercedes</string>
+    <string name="lexus">Lexus</string>
+    <string name="bmw">BMW</string>
+    <string name="nissan">Nissan</string>
+    <string name="honda">Honda</string>
+    <string name="toyota">Toyota</string>
+    <string name="audi_a3">Audi A3</string>
+    <string name="audi_a4">Audi A4</string>
+    <string name="audi_a5">Audi A5</string>
+    <string name="bmw_01">BMW 1</string>
+    <string name="bmw_02">BMW 2</string>
+    <string name="bmw_m3">BMW M3</string>
+    <string name="honda_civic">Honda Civic</string>
+    <string name="honda_hrv">Honda HRV</string>
+    <string name="honda_accord">Honda Accord</string>
+    <string name="lexus_is">Lexus IS</string>
+    <string name="lexus_rc">Lexus RC</string>
+    <string name="lexus_suv">Lexus SUV</string>
+    <string name="nissan_altima">Nissan Altima</string>
+    <string name="nissan_sentra">Nissan Sentra</string>
+    <string name="nissan_versa">Nissan Versa</string>
+    <string name="toyota_camry">Toyota Camry</string>
+    <string name="toyota_corrella">Toyota Corrella</string>
+    <string name="toyota_prius">Toyota Prius</string>
+    <string name="mercedes_c300">Mercedes C300</string>
+    <string name="mercedes_e250">Mercedes C250</string>
+    <string name="mercedes_s550">Mercedes S550</string>
+
 </resources>

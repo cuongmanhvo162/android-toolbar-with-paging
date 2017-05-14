@@ -7,7 +7,7 @@ package cuongvo.androidtoolbarwithpaging.data;
 public class CarData {
     private String name;
     private String brand;
-    private String picture;
+    private int picture;
     private long price;
 
     public String getName() {
@@ -26,11 +26,11 @@ public class CarData {
         this.brand = brand;
     }
 
-    public String getPicture() {
+    public int getPicture() {
         return picture;
     }
 
-    public void setPicture(String picture) {
+    public void setPicture(int picture) {
         this.picture = picture;
     }
 
