@@ -2,6 +2,7 @@ package cuongvo.androidtoolbarwithpaging.adapter;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -20,7 +21,7 @@ public class CarBrandListAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
     private Context mContext;
     private List<CarBrandData> mList;
 
-    public CarBrandListAdapter(Context context, List<CarBrandData> list){
+    public CarBrandListAdapter(Context context, List<CarBrandData> list) {
         this.mContext = context;
         this.mList = list;
     }
@@ -31,7 +32,7 @@ public class CarBrandListAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
 
         LayoutInflater inflaterMainCategory = (LayoutInflater) parent.getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 
-        view = inflaterMainCategory.inflate(R.layout.adapter_car_list, parent, false);
+        view = inflaterMainCategory.inflate(R.layout.adapter_car_brand_list, parent, false);
 
         CarBrandListViewHolder holder = new CarBrandListViewHolder(view);
 
@@ -42,11 +43,15 @@ public class CarBrandListAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
     public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
         CarBrandData carBrandData = mList.get(position);
 
+        CarBrandListViewHolder viewHolder = (CarBrandListViewHolder) holder;
+
+        viewHolder.mName.setText(carBrandData.getName());
 
     }
 
     @Override
     public int getItemCount() {
+        Log.d("CarBrandList","size " + mList.size());
         return mList.size();
     }
 }
